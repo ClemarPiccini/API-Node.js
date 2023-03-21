@@ -1,9 +1,10 @@
 exports.post = (req, res, next) => {
+    const cadastro = req.params.cadastro;
     res.status(201).send(req.body);
 };
 exports.put = (req, res, next) => {
     const id = req.params.id;
-    res.status(201).send({
+    res.status(200).send({
         id: id,
         item: req.body
     });
